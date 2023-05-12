@@ -11,19 +11,36 @@
     </head>
     <body>
         
-        <form method="post" action="">
+        <form method="get" action="">
             <fieldset>
              <legend>Personal data</legend>
              
              <fieldset>
-                <legend>Your Name</legend>
-                <label for="firstname">First Name&nbsp&nbsp&nbsp&nbsp:</label><input placeholder="ex mostafa"/><br><br> 
-                <label for="lastname">Last Name&nbsp&nbsp&nbsp&nbsp:</label><input placeholder="ex ahmed"/> 
+                <legend>Your Name</legend><br>
+                <label for="firstname">First Name&nbsp&nbsp&nbsp&nbsp:</label><input id="firstname" name="firstname" placeholder="ex mostafa"/><br><br> 
+                <label for="lastname">Last Name&nbsp&nbsp&nbsp&nbsp:</label><input id="lastname" name="lastname" placeholder="ex ahmed"/> 
              </fieldset>
 
+             <br><br>
+             <label for="phone">Your Phone&nbsp&nbsp&nbsp:</label><input id="phone" name="phone" type="tel" placeholder="ex +2010123456789"/><br><br> 
+             <label for="email">Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label><input id="email" name="email" type="email" placeholder="ex mostafa.ahmed2509@gmail.com"/><br><br> 
+             <label for="pass">Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label><input id="pass" name="pass" type="password" placeholder="enter password"/><br><br> 
+             <label for="repass">re-Password&nbsp&nbsp:</label><input id="repass" name="repass" type="password" placeholder="re enter your password"/><br><br> 
+             <input id="gender1" name="gender" type="radio" value="1"/><label for="gender1">Male</label><br>
+             <input id="gender2" name="gender" type="radio" value="2"/><label for="gender2">Female</label><br><br>
+             <input id="grade1" name="grade" type="checkbox" value="1"/><label for="grade1">Student</label><br>
+             <input id="grade2" name="grade" type="checkbox" value="2"/><label for="grade2">Graduated</label><br><br>
+             <label for="uni">University&nbsp&nbsp:</label>
+             <select name="uni" id="uni">
+                <option value="AUC">AUC</option>
+                <option value="GUC">GUC</option>
+                <option value="BUC">BUC</option>
+                <option value="shorouk">Shorouk Academy</option>
+              </select>
+              <br><br>
 
-
-
+            
+             <button type="submit">Submit</button>
             </fieldset>
            </form>
 
